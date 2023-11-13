@@ -1,0 +1,37 @@
+{% extends "Base.html" %}
+{% load static %}
+{% block content %}
+<!-- About Start -->
+<!-- À propos Début -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="section-title">
+            <h4 class="d-flex align-items-center justify-content-center text-warning text-uppercase " style="letter-spacing: 5px; ">À propos de nous</h4>
+            <h1 class="display-4 d-flex align-items-center justify-content-center">VIKING GAMING</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 py-0 py-lg-5">
+                <h1 class="mb-3 " style="color: #6e4208;">Notre Histoire</h1>
+                <h5 class="mb-3">Notre histoire a commencé en 2022, avec l'idée d'offrir une plateforme de jeu exceptionnelle pour tous les amateurs d'e-sports.</h5>
+                <p>En 2022, nous avons lancé Viking Gaming avec une passion pour le jeu et le désir de créer une plateforme de gaming conviviale et compétitive. Non seulement nous offrons une expérience de jeu exceptionnelle, mais nous vendons également des jeux de développeurs indépendants talentueux. Notre plateforme est devenue un lieu où se créent des histoires passionnantes et où chaque joueur peut se sentir chez lui. Notre histoire continue avec enthousiasme, rejoignez-nous pour partager votre passion pour le jeu.</p>
+               
+            </div>
+            <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-relative w-100 h-100" src="{% static 'img/jett.png' %}" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-4 py-0 py-lg-5">
+                <h1 class="mb-3" style="color: #6e4208;">Notre Vision</h1>
+                <p>Notre vision est de créer une plateforme où le gaming devient une expérience immersive, stimulante et unifiante pour tous. Nous aspirons à être bien plus qu'une simple plateforme de gaming. Nous voulons être un lieu de connexion, d'inspiration et de découverte pour tous les gamers. De plus, nous nous engageons à fournir un accès facile à une variété de jeux incroyables à travers notre boutique en ligne.</p>
+                <h5 class="mb-3"><i class="fa fa-check text-warning mr-3"></i>Plateforme enrichissante pour les gamers</h5>
+                <h5 class="mb-3"><i class="fa fa-check text-warning mr-3"></i>Expérience de jeu exceptionnelle</h5>
+                <h5 class="mb-3"><i class="fa fa-check text-warning mr-3"></i>Vente de jeux variés et de qualité</h5>
+                <a href="{%url 'items:Menu'%}" class="btn btn-warning font-weight-bold py-2 px-4 mt-2">Visitez notre Boutique</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- À propos Fin -->
+
+{% endblock %}
